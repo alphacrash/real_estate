@@ -43,7 +43,7 @@ export const GlobalProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useGlobalCOntext = (): GlobalContextType => {
+export const useGlobalContext = (): GlobalContextType => {
   const context = useContext(GlobalContext);
   if (!context) {
     throw new Error("useGlobalContext must be used within a GlobalProvider");
